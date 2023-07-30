@@ -1,0 +1,687 @@
+body{
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+}
+#menu_items{
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#btn_buy_now{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+#menu_items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 28px;
+    height: 10vh;
+}
+.app_item{
+    display: flex;
+    flex-direction: column;
+    width: 84px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+  }
+.app_item p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.app_item:last-of-type{
+    border: none;
+   
+}
+#app_dropdown{
+    position: absolute;
+    text-align:center;
+    display: none;
+    right: 375px;
+    top: 50px;
+    background-color: white;
+    width: 150px;
+    border-top: 4px solid #aad236;
+    box-shadow: 2px 0px 5px #8b8b99;
+    
+}
+#dropdown_wrapper:hover #app_dropdown{
+    display: block;
+  }
+  #dropdown_wrapper{
+    display: inline-block;
+  }
+#left-header{
+    display: flex;
+    align-items: center;   
+}
+#left-header span{
+    padding: 10px;
+    cursor: pointer;
+}
+#right-header{
+    display: flex;
+    align-items: center;
+
+}
+#right-header img{
+    height: 40px;
+    width: 40px;
+}
+#section_1{
+    display: flex;
+    height: 90vh;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    flex-direction: column;
+   justify-content: center;
+}
+#heading{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 40px;
+    
+}
+#description{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+    margin: 14px;
+
+}
+#section_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 90vh;
+}
+#first_step{
+    background-color: #5acda6;
+}
+#second_step{
+    background-color: #91ac41;
+}
+#third_step{
+    background-color:  #e4b476;
+}
+#fourth_step{
+    background-color: #f69dad;
+
+}
+.step-item{
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+}
+.step-item h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+.step-item p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+#section_3{
+    background-color: #f7eee2;
+    padding: 75px 0;
+}
+
+#section_3 h3{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.section3_heading{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#store_descripton{
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 55px;
+}
+#fresh_food{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    padding-top: 35px;
+}
+#store_item_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 70vh;
+    width: 100%;
+}
+.store_item{
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+.img-circle{
+    height: 50px;
+    width: 50px;
+    background-color: #e3b375;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    text-align: center;
+}
+.fa{
+    padding-top: 17.5px;
+    color: white;
+}
+.fab{
+    padding-top: 17.5px;
+    color: white;
+}
+.store_item h3{
+    font-size: 24px;
+    font-weight:600;
+}
+.store_item p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+#section_4 h3{
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+}
+#testimonial_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.testimonial-item{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 15px;
+    padding: 30px;
+    height: 300px;
+    animation-play-state:paused;
+}
+.testimonial-item: hover{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 15px;
+    padding: 30px;
+    height: 300px;
+    animation-name: shadow_animation;
+    animation-play-state:running;
+    animation-iteration-count:infinite;
+}
+@keyframes shadow_animation {
+    from{
+        
+    }
+   to{
+    box-shadow: 2px 0px 5px #8b8b99;
+   }
+  }
+#testimonial-item_middle{
+    height: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.testimonial_card_img{
+    border-radius: 50%;
+    width: 80px;
+    align-self: center;
+}
+.testimonial_card_msg{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    text-align: center;
+    width: 250px;
+    letter-spacing: 0.5px;
+}
+.card_autor{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.card_autor h1{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+.card_autor p{
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: Italic;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+#section_5{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 90vh;
+}
+#picture img{
+    width: 850px;
+}
+#picture{
+    display: flex;
+    width: 70%;
+}
+
+#suscribe_form{
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-size: cover;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 30px 50px;
+    margin: 0;
+}
+#suscribe_form-elements{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+#suscribe_form h1{
+    text-align: left;
+}
+#suscribe_form p{
+    text-align: left;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+}
+#suscribe_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.email_input{
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.submit_button{
+    background-color: #f69dad;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 30px;
+    cursor: pointer;
+}
+#section_6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f6fcfa;
+    height: 250px;
+}
+.statistic_data{
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.statistic_data h1{
+    text-align: center;
+}
+.statistic_data p{
+    color: #57e3b5;
+    text-align: center;
+    font-style: italic;
+    width: 100px;
+    margin: auto;
+}
+#section_7{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 520px;
+}
+#section_7 h1{
+    text-align: center;
+    color: #8b8b99;;
+}
+#video{
+    text-align: center;
+}
+#video video{
+    width: 700px;
+}
+#section_8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section_8 p{
+    line-height: 1.5;
+}
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+#contact-us h1{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    font-style: italic;
+    font-weight: 600;
+}
+#contact-us h2{
+    font-size: 30px;
+}
+#contact-us p{
+    color: #8b8b99;
+}
+#meet_us{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#meet_us h1{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    font-style: italic;
+    font-weight: 600;
+}
+#meet_us h2{
+    font-size: 30px;
+}
+#meet_us p{
+    color: #8b8b99;
+}
+.contact_form input{
+    margin-top: 10px;
+    border-color: #8b8b99;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 10px;
+}
+.contact_form .submit-now{
+    background-color: #aad236;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    cursor: pointer;
+}
+.contact_form .message-box{
+    height: 100px;
+    
+}
+footer{
+    background-color: #232323;
+}
+footer p{
+    margin: 0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   #right-header img {
+        height: 40px;
+        width: 40px;
+    } 
+    #left-header span {
+        display: none;
+    }
+    #heading {
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 5px;
+        padding: 20px;
+    }
+    #description{
+        font-size: 14px;
+        padding-top: 0px;
+        letter-spacing: 0px;
+        margin: 0px;
+    }
+    #section_1{
+        background-size: cover;
+    }
+    #section_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .step-item{
+        width: auto;
+    }
+    #section_3{
+        padding: 0;
+    }
+    #store_item_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        height: auto;
+    }
+    #fresh_food {
+        font-size: 19px;
+        padding-top: 50px;
+    }
+    #section_3 h3 {
+        font-size: 40px;
+        margin-bottom: 8px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #store_descripton {
+        font-size: 15px;
+    }
+    .store_item {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 24px;
+    }
+    .section3_heading {
+        font-size: 25px;
+        margin-bottom: 8px;
+        margin-top: 12px;
+        text-align: center;
+    }
+    .store_item p {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        color: #8b8b99;
+        padding-left: 30px;
+    }
+    #section_4{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    #section_4 h3{
+        font-size: 33px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #store_descripton {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    #testimonial_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .testimonial_card_msg {
+        margin-left: auto;
+    margin-left: auto;
+    width: auto;
+    }
+    #section_5{
+        flex-direction: column;
+        height: auto;
+    }
+    #picture img {
+        width: 378px;
+    }
+    #picture {
+        display: flex;
+        width: auto;
+    }
+    #suscribe_form{
+        width: auto;
+        padding: 20px 20px;
+    }
+    #suscribe_form-elements {
+        width: auto;
+    }
+    #suscribe_form p {
+        color: #8b8b99;
+    }
+    .email_input {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 326px;
+    }
+    #section_6 {
+        flex-direction: column;
+        height: auto;
+    }
+    .statistic_data {
+        width: 100%;
+    }
+    .statistic_data h1 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .statistic_data p {
+        margin-bottom: 20px;
+    }
+    #section_7 {
+        height: auto;
+    }
+    #section_7 h1 {
+        font-weight: 400;
+    }
+    #video {
+        text-align: center;
+        width: auto;
+    }
+    #video video {
+        width: 375px;
+    }
+    #section_8 {
+        flex-direction: column;
+    }
+    #contact-us h2 {
+        margin-top: 0;
+    }
+    #contact-us {
+        width: auto;
+        margin-left: 20px;
+    }
+    #meet_us {
+        width: 100%;
+        margin-left: 20px;
+    }
+    #meet_us p {
+        margin-right: 20px;
+    }
+    .contact_form {
+        margin-right: 20px;
+    }
+    .contact_form input {
+        margin-right: 20px;
+    }
+    .contact_form .submit-now {
+        margin-bottom: 20px;
+    }
+}
